@@ -1,0 +1,109 @@
+﻿C#
+int var =10;
+
+VB.NET
+dim var as Integer = 10
+
+EXE - 
+DLL - Pre- Compiled File
+
+MSIL - Interm
+
+CLR - JIT Compiler - Finalize / Dispose
+
+class Test
+{
+int a=10;
+
+void Method(){
+int b=20
+}
+}
+
+Main()
+{
+Test obj=new Test();
+Test obj1 = new Test();
+
+}
+
+Button1 Button2
+
+
+FCL - Framework Class Library(Console, ASP.NET, Unity, Azure)
+
+BCL  - Base Class Libaray(System, System.Data, System.IO
+
+C#, VB.NET
+
+Value Type /
+Stack Memory - 
+int a = 10000000;
+
+
+Reference Type
+Heap Memory
+string str = "India";
+
+I - a100
+N - a888
+D - a889
+
+Stack		Heap 
+str-z71101	I n d i a
+obj		Memory()
+		(Stack / Heap)
+
+
+Stack		Heap 
+a=1000(x101)
+str=d1001		Hello World(d1001)
+
+
+WriteLine(a)
+-----
+Pascal Casing - Class, Method, Interface, Delegate, Properties, Event, Namespace
+camel Casing - private Variable/ Method, Method Parameter/signature
+
+EmployeeDetails - Pascal Casing
+
+int getMobileNo;
+
+SolutionName <CompanyName>.<ProductName>
+
+ProjectName <CompanyName>.<ProjectName>.<Module>
+
+
+namespace Day1
+{
+	class Program{
+		static void Main(string [] arg){}
+	}
+}
+
+Boxing
+Converting Value type to Reference Type
+int a=1000;
+short age = 200;
+
+object o1= a;
+o1 = age;
+
+
+
+
+
+
+UnBoxing
+Converting Reference type to Value Type
+
+
+
+
+
+
+
+
+
+
+
