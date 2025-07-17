@@ -9,6 +9,8 @@
         public void Mehtod()
         {
             Console.WriteLine();
+
+            Sample2.name = "Static Example";
         }
     }
 }
