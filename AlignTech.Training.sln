@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36212.18 d17.14
+VisualStudioVersion = 17.14.36212.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlignTech.CSharp.Day1", "AlignTech.CSharp.Day1\AlignTech.CSharp.Day1.csproj", "{A94587C5-33EF-479A-859E-EA38871EEA42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlignTech.CSharp.Day2", "AlignTech.CSharp.Day2\AlignTech.CSharp.Day2.csproj", "{0751FDB3-65D1-4514-B1D2-75B418B30F82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A94587C5-33EF-479A-859E-EA38871EEA42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A94587C5-33EF-479A-859E-EA38871EEA42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A94587C5-33EF-479A-859E-EA38871EEA42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0751FDB3-65D1-4514-B1D2-75B418B30F82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0751FDB3-65D1-4514-B1D2-75B418B30F82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0751FDB3-65D1-4514-B1D2-75B418B30F82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0751FDB3-65D1-4514-B1D2-75B418B30F82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

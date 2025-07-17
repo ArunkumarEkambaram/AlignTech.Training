@@ -75,19 +75,25 @@
 //int.TryParse(Console.ReadLine(), out int number);
 //Console.WriteLine($"Number :{number}");
 
-//Instance Example
+////Instance Example
+//using AlignTech.CSharp.Day1;
+
+//Sample2 obj = new();
+//obj.id = 100;
+
+//Sample2 obj2 = new Sample2();
+//obj.id = 200;
+
+////Static Example
+//Sample2.name = "AlignTech";
+
+////obj.salary = 2000;
+
+////Const Variable
+//Console.WriteLine($"Company Name :{Sample2.company}");
+
+//Calling New Class
 using AlignTech.CSharp.Day1;
 
-Sample2 obj = new Sample2();
-obj.id = 100;
-
-Sample2 obj2 = new Sample2();
-obj.id = 200;
-
-//Static Example
-Sample2.name = "AlignTech";
-
-//obj.salary = 2000;
-
-//Const Variable
-Console.WriteLine($"Company Name :{Sample2.company}");
+NewClass obj = new NewClass();
+obj.GetData();
