@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlignTech.CSharp.Day1", "Al
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlignTech.CSharp.Day2", "AlignTech.CSharp.Day2\AlignTech.CSharp.Day2.csproj", "{0751FDB3-65D1-4514-B1D2-75B418B30F82}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlignTech.CommonLibrary", "AlignTech.CommonLibrary\AlignTech.CommonLibrary.csproj", "{1F08B2C6-201D-47D1-B89D-1A3DEF214A1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0751FDB3-65D1-4514-B1D2-75B418B30F82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0751FDB3-65D1-4514-B1D2-75B418B30F82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0751FDB3-65D1-4514-B1D2-75B418B30F82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F08B2C6-201D-47D1-B89D-1A3DEF214A1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F08B2C6-201D-47D1-B89D-1A3DEF214A1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F08B2C6-201D-47D1-B89D-1A3DEF214A1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F08B2C6-201D-47D1-B89D-1A3DEF214A1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

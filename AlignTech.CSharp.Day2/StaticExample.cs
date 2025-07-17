@@ -10,14 +10,14 @@ namespace AlignTech.CSharp.Day2
 {
     public class StaticExample
     {
-        static int id = 10001;
+        static int id; //Declare a static variable
         string name;
 
         ////Default Constructor
         public StaticExample()
         {
-            Console.WriteLine("Default Constructor");
-            id = 10001;
+            //  Console.WriteLine("Default Constructor");
+            id++; // Increment the static variable          
         }
 
         public StaticExample(string name)
@@ -27,13 +27,19 @@ namespace AlignTech.CSharp.Day2
 
         static StaticExample()
         {
-            id = 2000;
-            Console.WriteLine("Static Constructor");
+            id = 1000; //Initialize the static variable
+            //Console.WriteLine("Static Constructor");
         }
 
         public void GetId()
         {
             Console.WriteLine($"Id : {id}");
-        }   
+        }
+
+        ~StaticExample()
+        {
+            // Destructor
+            Console.WriteLine("Destructor called");
+        }
     }
 }
