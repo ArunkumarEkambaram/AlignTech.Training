@@ -1,5 +1,6 @@
 ﻿//Array Example
 //Single Dimensional Array Example
+using AlignTech.CSharp.Day3;
 using System.Transactions;
 
 int[] arr = new int[5];
@@ -51,16 +52,25 @@ int[,] studentMarks = new int[3, 4]
 //Jagged Array Example
 //Syntax: <datatype>[][] arrayName = new <datatype>[rows][];
 
-int[][] jArray = new int[3][];
-jArray[0] = new int[2] { 1, 2 };
-jArray[1] = new int[3] { 3, 4, 5 };
-jArray[2] = new int[4] { 6, 7, 8, 9 };
+//int[][] jArray = new int[3][];
+//jArray[0] = new int[2] { 1, 2 };
+//jArray[1] = new int[3] { 3, 4, 5 };
+//jArray[2] = new int[4] { 6, 7, 8, 9 };
 
-for (int i = 0; i < jArray.Length; i++)
-{
-    for (int j = 0; j < jArray[i].Length; j++)
-    {
-        Console.Write($"{jArray[i][j]} ");
-    }
-    Console.WriteLine();
-}
+//for (int i = 0; i < jArray.Length; i++)
+//{
+//    for (int j = 0; j < jArray[i].Length; j++)
+//    {
+//        Console.Write($"{jArray[i][j]} ");
+//    }
+//    Console.WriteLine();
+//}
+
+//Dynamic Array Size
+Console.WriteLine($"Enter the Number of Cities: ");
+int size = Convert.ToInt32(Console.ReadLine());
+ArrayExample obj = new ArrayExample(size);
+//Get Cities
+obj.GetCities();
+//Display Cities
+obj.DisplayCities();
