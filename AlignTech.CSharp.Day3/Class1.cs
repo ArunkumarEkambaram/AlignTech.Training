@@ -31,10 +31,11 @@ namespace AlignTech.CSharp.Day3
 
     public class  Class4: Class3
     {
-        public override void Method1()
-        {
-            base.Method1();
-        }
+        //Since the method is sealed in Class3, it cannot be overridden here.
+        //public override void Method1()
+        //{
+        //    base.Method1();
+        //}
 
         public override void Method2()
         {
