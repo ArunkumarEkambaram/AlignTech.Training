@@ -1,7 +1,12 @@
-﻿//Array Example
+﻿
+
+//Array Example
 //Single Dimensional Array Example
 using AlignTech.CSharp.Day3;
 using System.Transactions;
+
+#region Array Example
+
 
 int[] arr = new int[5];
 
@@ -9,10 +14,18 @@ int[] arr1 = new int[5] { 1, 2, 3, 4, 5 };
 
 int[] arr2 = { 1, 2, 3, 4, 5, 5 };
 
+
+//Array Resize
+//Array.Resize(ref arr, 10);
+
+Array.Sort(arr1);
+
+Array.Reverse(arr1);
+
 //For Loop Example
-//for (int i = 0; i < arr1.Length; i++)
+//for (int i = 0; i < arr.Length; i++)
 //{
-//    Console.WriteLine($"Array :{i}:Value :{arr1[i]}");
+//    Console.WriteLine($"Array :{i}:Value :{arr[i]}");
 //}
 
 
@@ -33,12 +46,12 @@ int[] arr2 = { 1, 2, 3, 4, 5, 5 };
 //Two Dimensional Array Example
 //Syntax: <datatype>[,] arryName= new <datatype>[rows, columns]; 
 
-int[,] studentMarks = new int[3, 4]
-{
-    { 1001, 55, 66, 77},
-    { 1002, 55, 66, 77},
-    { 1003, 55, 66, 77},
-};
+//int[,] studentMarks = new int[3, 4]
+//{
+//    { 1001, 55, 66, 77},
+//    { 1002, 55, 66, 77},
+//    { 1003, 55, 66, 77},
+//};
 
 //for (int i = 0; i < studentMarks.GetLength(0); i++)
 //{
@@ -67,10 +80,36 @@ int[,] studentMarks = new int[3, 4]
 //}
 
 //Dynamic Array Size
-Console.WriteLine($"Enter the Number of Cities: ");
-int size = Convert.ToInt32(Console.ReadLine());
-ArrayExample obj = new ArrayExample(size);
-//Get Cities
-obj.GetCities();
-//Display Cities
-obj.DisplayCities();
+//Console.WriteLine($"Enter the Number of Cities: ");
+//int size = Convert.ToInt32(Console.ReadLine());
+//ArrayExample obj = new ArrayExample(size);
+////Get Cities
+//obj.GetCities();
+////Display Cities
+//obj.DisplayCities();
+#endregion
+
+//Inheritance Example
+//ChildClass child = new ChildClass();
+//ChildClass child = new("Align Tech");
+
+//Seller seller = new Seller();
+//DomesticSeller dSeller = new DomesticSeller();
+
+//seller.DisplaySeller();
+//dSeller.DisplaySeller();
+
+//Seller seller2 = dSeller;
+//dSeller.DisplaySeller();
+
+//string[] location = { "Chennai,", "Hyderabad", "Bengaluru" };
+//DomesticSeller dSeller = new(1001, "Chennai,", "Hyderabad", "Bengaluru");
+//dSeller.DisplaySellerDetails();
+//dSeller.PayTax();
+
+//InternationalSeller international =new InternationalSeller(2001, "USA", "Canada");
+//international.DisplaySellerDetails();
+//international.PayTax();
+
+Class3 class3 = new Class3();
+class3.Method2();
