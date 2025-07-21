@@ -27,6 +27,8 @@
 #endregion
 
 
+#region Exception Handling
+
 //Exception Handling
 ExceptionExample obj = new ExceptionExample();
 //try
@@ -64,11 +66,21 @@ ExceptionExample obj = new ExceptionExample();
 //}
 
 //Understanding use of throw keyword
-try
-{
-    obj.ProcessUserData();
-}
-catch(Exception ex)
-{
-    Console.WriteLine(ex.ToString());
-}
+//try
+//{
+//    obj.ProcessUserData();
+//}
+//catch(Exception ex)
+//{
+//    Console.WriteLine(ex.ToString());
+//}
+
+#endregion
+
+string str = "Hello, World. Good Morning        Hello";
+
+int result = str.WordCount();
+Console.WriteLine($"Result :{result}");
+
+ExceptionExample exp1=new ExceptionExample();
+exp1.GetAllException("Base Exception");

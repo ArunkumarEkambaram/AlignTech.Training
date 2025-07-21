@@ -1,6 +1,6 @@
 ﻿namespace AlignTech.CSharp.Day4
 {
-    internal class ExceptionExample
+    public class ExceptionExample
     {
         public void TestMethod()
         {
