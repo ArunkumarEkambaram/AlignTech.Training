@@ -89,6 +89,9 @@ Array.Reverse(arr1);
 //obj.DisplayCities();
 #endregion
 
+#region Inheritance
+
+
 //Inheritance Example
 //ChildClass child = new ChildClass();
 //ChildClass child = new("Align Tech");
@@ -102,19 +105,26 @@ Array.Reverse(arr1);
 //Seller seller2 = dSeller;
 //dSeller.DisplaySeller();
 
-string[] location = { "Chennai,", "Hyderabad", "Bengaluru" };
-DomesticSeller dSeller = new(1001, "Chennai,", "Hyderabad", "Bengaluru");
-dSeller.DisplaySellerDetails();
-//dSeller.PayTax();
+//string[] location = { "Chennai,", "Hyderabad", "Bengaluru" };
+//DomesticSeller dSeller = new(1001, "Chennai,", "Hyderabad", "Bengaluru");
+//dSeller.DisplaySellerDetails();
+////dSeller.PayTax();
 
-InternationalSeller international = new InternationalSeller(2001, "USA", "Canada");
-international.DisplaySellerDetails();
-international.PayTax();
+//InternationalSeller international = new InternationalSeller(2001, "USA", "Canada");
+//international.DisplaySellerDetails();
+//international.PayTax();
 
-//Non-Inherited Class
-Retailer retailer = new Retailer();
-retailer.PayTax();
-retailer.StateTax();
+////Non-Inherited Class
+//Retailer retailer = new Retailer();
+//retailer.PayTax();
+//retailer.StateTax();
 
 //Class3 class3 = new Class3();
 //class3.Method2();
+
+#endregion
+
+DerivedClass derived=new DerivedClass();
+BaseClass baseClass = derived;
+derived.Display();
+baseClass.Display();
