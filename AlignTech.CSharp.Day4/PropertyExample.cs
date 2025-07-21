@@ -1,4 +1,6 @@
 ﻿
+using System.Reflection.Metadata.Ecma335;
+
 namespace AlignTech.CSharp.Day4
 {
     public class Customer
@@ -44,6 +46,27 @@ namespace AlignTech.CSharp.Day4
         //Init Property
         public int Shipping { get; init; }
 
+        //Write-Only Property
+        private string _logMessage;
+        public string LogMessage
+        {
+            set
+            {
+                _logMessage = value;
+            }
+        }
+
+        //Computed Property
+        //public decimal Total
+        //{
+        //    get
+        //    {
+        //        return Price * Salary;
+        //    }
+        //}
+
+        //Computed Property using Expression Bodied 
+        public decimal Total => Price * Salary;
         public Customer()
         {
             //Initialze Init Property
