@@ -84,3 +84,5 @@ Console.WriteLine($"Result :{result}");
 
 ExceptionExample exp1=new ExceptionExample();
 exp1.GetAllException("Base Exception");
+
+exp1.PrintMethod<ExceptionExample>();
