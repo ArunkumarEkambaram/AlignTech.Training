@@ -21,6 +21,14 @@
         public float Divide(int n1, int n2)
         {
             return (float)n1 / n2;
-        }      
+        }
+
+        //Predicate
+        public bool FindById(int id)
+        {
+            if (id == 1)
+                return true;
+            return false;
+        }
     }
 }

@@ -68,22 +68,36 @@
 
 #endregion
 
-//Action
-DelegateEx2 obj = new DelegateEx2();
-Action greet = obj.Greet;
-//greet("Kayal");
-greet();
+#region Delegate
 
-Action<string> greet1 = obj.Greet;
-greet1("Hari");
+////Action
+//DelegateEx2 obj = new DelegateEx2();
+//Action greet = obj.Greet;
+////greet("Kayal");
+//greet();
 
-//Action<int, int> divide = obj.Divide;
-//var result = divide(200, 6);
-//Console.WriteLine(result);
+//Action<string> greet1 = obj.Greet;
+//greet1("Hari");
 
-Func<int, int, float> divide = obj.Divide;
-var result = divide(200, 3);
-Console.WriteLine($"Divide :{result}");
+////Action<int, int> divide = obj.Divide;
+////var result = divide(200, 6);
+////Console.WriteLine(result);
 
-Func<int, int, string> multi = (a, b) => (a * b).ToString();
-Console.WriteLine($"Multiply :{multi}");
+//Func<int, int, float> divide = obj.Divide;
+//var result = divide(200, 3);
+//Console.WriteLine($"Divide :{result.ToString("n2")}");
+
+//Func<int, int, string> multi = (a, b) => (a * b).ToString();
+//Console.WriteLine($"Multiply :{multi(50, 6)}");
+
+////Calling Method using Predicate
+//Predicate<int> find = obj.FindById;
+//Console.WriteLine(find(11) ? "Employee Id Found" : "Invalid Id");
+#endregion
+
+//Event
+Alarm alarm = new Alarm();
+User user = new User();
+
+alarm.RaiseAlarm += user.Message;
+alarm.RaiseEvent("Wake Up, Good Morning");
