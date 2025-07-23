@@ -95,9 +95,24 @@
 //Console.WriteLine(find(11) ? "Employee Id Found" : "Invalid Id");
 #endregion
 
-//Event
-Alarm alarm = new Alarm();
-User user = new User();
+////Event
+//Alarm alarm = new Alarm();
+//User user = new User();
 
-alarm.RaiseAlarm += user.Message;
-alarm.RaiseEvent("Wake Up, Good Morning");
+//alarm.RaiseAlarm += user.Message;
+//alarm.RaiseEvent("Wake Up, Good Morning");
+
+//TestClass test = new TestClass();
+//test.Method1();
+
+//Console.WriteLine($"Enter User Id and Password");
+//string uid = Console.ReadLine();
+//string pwd = Console.ReadLine();
+//test.Method2(uid, pwd);
+
+CallbackExample obj = new CallbackExample();
+Notify notify = new Notify();
+
+NotificationHandler notification = notify.ShowMessage;
+obj.AddNumber(10, 33, notification);
+obj.MultiNumber(3, 4, notification);
