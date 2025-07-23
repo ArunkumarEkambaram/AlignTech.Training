@@ -1,7 +1,7 @@
 ﻿namespace AlignTech.CSharp.Day6
 {
     //Create a Delegate - Step 1
-    public delegate void MyDelegate(string msg);
+    public delegate void MyDelegate(string msg);   
 
     public class DelegateExample
     {
