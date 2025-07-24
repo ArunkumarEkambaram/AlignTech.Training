@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlignTech.CSharp.Day5", "Al
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlignTech.CSharp.Day6", "AlignTech.CSharp.Day6\AlignTech.CSharp.Day6.csproj", "{A07F37BC-8389-481A-A521-B5DEA4345A4A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlignTech.CSharp.Day7", "AlignTech.CSharp.Day7\AlignTech.CSharp.Day7.csproj", "{4BF0F685-D1D6-4963-9E2E-8FE611DD32D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{A07F37BC-8389-481A-A521-B5DEA4345A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A07F37BC-8389-481A-A521-B5DEA4345A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A07F37BC-8389-481A-A521-B5DEA4345A4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BF0F685-D1D6-4963-9E2E-8FE611DD32D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BF0F685-D1D6-4963-9E2E-8FE611DD32D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BF0F685-D1D6-4963-9E2E-8FE611DD32D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BF0F685-D1D6-4963-9E2E-8FE611DD32D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
