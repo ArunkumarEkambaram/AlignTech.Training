@@ -1,19 +1,10 @@
-﻿using System.Collections;
+﻿using AlignTech.CSharp.Day7.Models;
+using System.Collections;
 using System.Security.AccessControl;
 
 namespace AlignTech.CSharp.Day7
 {
-    public class Product
-    {
-        public int ProductId { get; set; }
-        public string ProductName { get; set; }
-    }
-
-    public class Employee
-    {
-        public int EmpId { get; set; }
-        public string EmpName { get; set; }
-    }
+   
 
     public class NonGenericCollection
     {
@@ -23,6 +14,7 @@ namespace AlignTech.CSharp.Day7
             arrList.Add(100);
             arrList.Add("Hello");
             arrList.Add(true);
+            arrList.Add(500);
 
             foreach (object item in arrList)
             {
