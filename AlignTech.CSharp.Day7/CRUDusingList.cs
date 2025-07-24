@@ -22,6 +22,7 @@ namespace AlignTech.CSharp.Day7
 
         public void DisplayProductInCart()
         {
+            productList.Sort(new PriceComparer());
             Console.WriteLine($"{"Product Id",-10}\t{"Product Name",-20}\t{"Price",-10}");
             Console.WriteLine("---------------------------------------------------------------");
             foreach (var product in productList)

@@ -32,14 +32,16 @@ using System.Collections;
 
 #endregion
 
+#region CRUD using List
+
 GenericDemo generic = new GenericDemo();
 //generic.TestMethod();
 //generic.TestMethod2();
 
 //CRUD
-Cart cart= new Cart();
+Cart cart = new Cart();
 //Add Product
-cart.AddToCart(new Product { ProductId = 1001, ProductName = "Pencil", Price=50 });
+cart.AddToCart(new Product { ProductId = 1001, ProductName = "Pencil", Price = 50 });
 cart.AddToCart(new Product { ProductId = 1002, ProductName = "Tennis Ball", Price = 5000 });
 cart.AddToCart(new Product { ProductId = 1003, ProductName = "Cricket Ball", Price = 600 });
 
@@ -52,3 +54,16 @@ int id = int.Parse(Console.ReadLine());
 cart.RemoveFromCart(id);
 
 cart.DisplayProductInCart();
+
+#endregion
+
+
+#region Dictionary
+
+////Dictionary Example
+//DictionaryExample obj = new();
+////obj.AddScores();
+
+//obj.AddUserProfiles();
+
+#endregion
