@@ -50,17 +50,25 @@ using System.Reflection;
 //var greetMethod2 = type.GetMethod("Greet", [typeof(string), typeof(long)]);
 //greetMethod2?.Invoke(mySampleClass, ["Kayal", 7894561230]);
 
+//Dynamicalling Load Assembly(.dll)
+//Assembly assembly = Assembly.LoadFrom(@"D:\2025\AlignTech\Demos\AlignTech.Training\AlignTech.CommonLibrary\bin\Debug\net8.0\AlignTech.CommonLibrary.dll");
+//var types = assembly.GetTypes();
+//foreach (var item in types)
+//{
+//    Console.WriteLine(item);
+//}
 #endregion
 
 //Custom Attribute
-var attributes = typeof(Customer).GetCustomAttributes(true);
+var attributes = typeof(ChildClass).GetCustomAttributes(true);
 
-foreach(var attr in attributes)
+foreach (var attr in attributes)
 {
     //Console.WriteLine(attr);
-    if(attr is InfoAttribute info)
+    if (attr is InfoAttribute info)
     {
         //  var info = (InfoAttribute)attr;
         Console.WriteLine($"Id :{info.Id}, Description :{info.Description}");
     }
 }
+

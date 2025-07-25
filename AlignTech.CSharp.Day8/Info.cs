@@ -1,6 +1,6 @@
 ﻿namespace AlignTech.CSharp.Day8
 {
-    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, AllowMultiple = true)]
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, AllowMultiple = true, Inherited = false)]
     //[AttributeUsage(AttributeTargets.All, AllowMultiple = true)]
     public class InfoAttribute : Attribute
     {
@@ -31,8 +31,13 @@
 
         }
 
-       // [Info(1002, "This is class is used to fetch record from database")]
+        // [Info(1002, "This is class is used to fetch record from database")]
         public int MyProperty { get; set; }
+
+    }
+
+    public class ChildClass : Customer
+    {
 
     }
 }
