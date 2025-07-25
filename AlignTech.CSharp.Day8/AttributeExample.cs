@@ -21,9 +21,19 @@
         public int Id { get; set; }
         public string Name { get; set; }
 
+        public void Greet()
+        {
+            Console.WriteLine($"Welcome, Guest");
+        }
+
         public void Greet(string name)
         {
             Console.WriteLine($"Welcome, {name}");
+        }
+
+        public void Greet(string name, long mobileNo)
+        {
+            Console.WriteLine($"Welcome, {name}\t Mobile No :{mobileNo}");
         }
 
         public int AddNumber(int a, int b) => a + b;
