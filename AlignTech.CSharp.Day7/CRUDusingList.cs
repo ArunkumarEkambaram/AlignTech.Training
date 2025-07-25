@@ -6,7 +6,7 @@ namespace AlignTech.CSharp.Day7
 {
     public class Cart
     {
-       
+
         List<Product> productList;
 
         public Cart()
@@ -22,7 +22,10 @@ namespace AlignTech.CSharp.Day7
 
         public void DisplayProductInCart()
         {
-            productList.Sort(new PriceComparer());
+            //productList.Sort(new PriceComparer());
+            productList.Sort((x, y) => { return y.Price.CompareTo(x.Price); });
+
+            //var products = productList.OrderByDescending(x => x.ProductName).ToList();
             Console.WriteLine($"{"Product Id",-10}\t{"Product Name",-20}\t{"Price",-10}");
             Console.WriteLine("---------------------------------------------------------------");
             foreach (var product in productList)
@@ -39,6 +42,19 @@ namespace AlignTech.CSharp.Day7
                 {
                     productList.Remove(item);
                     break;
+                }
+            }
+        }
+
+        //Update Product
+        public void UpdateProduct(Product product)
+        {
+            foreach (var item in productList)
+            {
+                if (item.ProductId == product.ProductId)
+                {
+                    item.ProductName = product.ProductName;
+                    item.Price = product.Price;
                 }
             }
         }

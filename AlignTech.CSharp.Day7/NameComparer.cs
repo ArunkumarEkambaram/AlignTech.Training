@@ -17,4 +17,6 @@ namespace AlignTech.CSharp.Day7
             return x.Price.CompareTo(y.Price);
         }
     }
+
+    
 }
