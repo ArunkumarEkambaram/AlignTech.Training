@@ -12,21 +12,21 @@
             t1.Start();
             t2.Start();
 
-            //t1.Join();
-            //t2.Join();
+            t1.Join();
+            t2.Join();
 
             Console.WriteLine($"Total Counter :{counter}");
         }
 
         static void Increment()
         {
-            for (int i = 0; i < 200; i++)
+            for (int i = 0; i < 10; i++)
             {
                 lock (objLock)
                 {
                     counter++;
                 }
-                //Console.WriteLine($"Counter :{counter}");
+                Console.WriteLine($"Counter :{counter}\t Thread Id :{Thread.CurrentThread.ManagedThreadId}");
                 Thread.Sleep(100);
             }
         }
