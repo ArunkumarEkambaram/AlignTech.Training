@@ -60,7 +60,7 @@ using System.Reflection;
 #endregion
 
 //Custom Attribute
-var attributes = typeof(ChildClass).GetCustomAttributes(true);
+var attributes = typeof(Customer).GetCustomAttributes(true);
 
 foreach (var attr in attributes)
 {
@@ -68,7 +68,7 @@ foreach (var attr in attributes)
     if (attr is InfoAttribute info)
     {
         //  var info = (InfoAttribute)attr;
-        Console.WriteLine($"Id :{info.Id}, Description :{info.Description}");
+        Console.WriteLine($"Id :{info.Id}, Description :{info.Description}, Status :{info.Status}");
     }
 }
 
