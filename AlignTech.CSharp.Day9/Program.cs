@@ -1,4 +1,5 @@
 ﻿using AlignTech.CSharp.Day9;
+using Microsoft.Extensions.DependencyInjection;
 
 #region Thread
 
@@ -38,15 +39,24 @@
 
 #endregion
 
-ProductBL product = new(new ProductDALV2());
-product.GetProduct();
+//Microsoft.Extensions.DependencyInjection
 
-//AnotherClassBL obj1 = new AnotherClassBL(new ProductDAL());//Constructor Injection
-//obj1.GetProductByName("Pen");
+//ProductBL product = new(new ProductDALV2());
+//product.GetProduct();
 
-AnotherClassBL anotherClassBL = new AnotherClassBL();
-//anotherClassBL.GetProduct(new ProductDALV2());//Method Injection
+//Resolve DI
+var service = new ServiceCollection().AddSingleton<IProduct, ProductDAL>();
+var provider = service.BuildServiceProvider();
+
+//Constructor Injection
+//ProductBL product = new ProductBL(provider.GetService<IProduct>());
+//product.GetProduct();
+
+////Method Injection
+//AnotherClassBL anotherClassBL = new AnotherClassBL();
+//anotherClassBL.GetProduct(provider.GetService<IProduct>());
 
 //Property Injection
-anotherClassBL.ProductDataObject = new ProductDAL();
+AnotherClassBL anotherClassBL = new AnotherClassBL();
+anotherClassBL.ProductDataObject = provider.GetService<IProduct>();
 anotherClassBL.GetProductByProperty();

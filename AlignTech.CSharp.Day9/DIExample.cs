@@ -18,15 +18,15 @@
 
         public List<string> GetProductbyName(string name)
         {
-            List<string> products= new List<string>();
+            List<string> newProduct= new List<string>();
             foreach (var item in products)
             {
-                if (item.Contains("Pen"))
+                if (item.Contains(name))
                 {
-                    products.Add(item);
+                    newProduct.Add(item);
                 }
             }
-            return products;
+            return newProduct;
         }
     }
 
