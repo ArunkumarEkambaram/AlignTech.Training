@@ -45,8 +45,11 @@ using Microsoft.Extensions.DependencyInjection;
 //product.GetProduct();
 
 //Resolve DI
-var service = new ServiceCollection().AddSingleton<IProduct, ProductDAL>();
-var provider = service.BuildServiceProvider();
+
+//var service = new ServiceCollection().AddSingleton<IProduct, ProductDAL>();
+//var provider = service.BuildServiceProvider();
+
+//var service = new ServiceCollection().AddSingleton<IProduct, ProductDAL>().BuildServiceProvider();
 
 //Constructor Injection
 //ProductBL product = new ProductBL(provider.GetService<IProduct>());
@@ -56,7 +59,7 @@ var provider = service.BuildServiceProvider();
 //AnotherClassBL anotherClassBL = new AnotherClassBL();
 //anotherClassBL.GetProduct(provider.GetService<IProduct>());
 
-//Property Injection
-AnotherClassBL anotherClassBL = new AnotherClassBL();
-anotherClassBL.ProductDataObject = provider.GetService<IProduct>();
-anotherClassBL.GetProductByProperty();
+////Property Injection
+//AnotherClassBL anotherClassBL = new AnotherClassBL();
+//anotherClassBL.ProductDataObject = provider.GetService<IProduct>();
+//anotherClassBL.GetProductByProperty();
