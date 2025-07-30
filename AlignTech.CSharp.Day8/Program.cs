@@ -59,16 +59,16 @@ using System.Reflection;
 //}
 #endregion
 
-//Custom Attribute
-var attributes = typeof(Customer).GetCustomAttributes(true);
+////Custom Attribute
+//var attributes = typeof(Customer).GetCustomAttributes(true);
 
-foreach (var attr in attributes)
-{
-    //Console.WriteLine(attr);
-    if (attr is InfoAttribute info)
-    {
-        //  var info = (InfoAttribute)attr;
-        Console.WriteLine($"Id :{info.Id}, Description :{info.Description}, Status :{info.Status}");
-    }
-}
+//foreach (var attr in attributes)
+//{
+//    //Console.WriteLine(attr);
+//    if (attr is InfoAttribute info)
+//    {
+//        //  var info = (InfoAttribute)attr;
+//        Console.WriteLine($"Id :{info.Id}, Description :{info.Description}, Status :{info.Status}");
+//    }
+//}
 

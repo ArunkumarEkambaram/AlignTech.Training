@@ -1,14 +1,15 @@
 ﻿//LINQ
+using AlignTech.LINQ.Day10;
 using AlignTech.LINQ.Day10.Models;
 
-var productData = new Product().GetProducts();
-var categoryData = new Category().GetCategories();
-//categoryData.Add(new Category { Id = 4 });
+//var productData = new Product().GetProducts();
+//var categoryData = new Category().GetCategories();
+////categoryData.Add(new Category { Id = 4 });
 
-//Query Expresssion
-var productQuery = from p in productData
-                   where p.Price > 1000 && p.Name.Contains("p", StringComparison.OrdinalIgnoreCase)
-                   select p;
+////Query Expresssion
+//var productQuery = from p in productData
+//                   where p.Price > 1000 && p.Name.Contains("p", StringComparison.OrdinalIgnoreCase)
+//                   select p;
 
 //Console.WriteLine("Query Expresssion");
 //foreach (var prd in productQuery)
@@ -75,21 +76,26 @@ var productQuery = from p in productData
 //    Console.WriteLine($"Category Id :{group.Key}\t{string.Join(", ", group.Select(p => p.Name))}");
 //}
 
-//Join
-var productJoin = productData.Join(
-                               categoryData,
-                               p => p.CategoryId, //Outer Table Key
-                               c => c.Id, //Inner Table Key
-                               (p, c) => new
-                               {
-                                   ProductId = p.Id,
-                                   CategoryId = p.CategoryId,
-                                   CategoryName = c.CategoryName,
-                                   ProductName = p.Name,
-                                   Price = p.Price,
-                               }
-                               );
-foreach(var item in productJoin)
-{
-    Console.WriteLine($"PRoduct Name {item.ProductName}\tCategory Name :{item.CategoryName}\tPRice :{item.Price}");
-}
+////Join
+//var productJoin = productData.Join(
+//                               categoryData,
+//                               p => p.CategoryId, //Outer Table Key
+//                               c => c.Id, //Inner Table Key
+//                               (p, c) => new
+//                               {
+//                                   ProductId = p.Id,
+//                                   CategoryId = p.CategoryId,
+//                                   CategoryName = c.CategoryName,
+//                                   ProductName = p.Name,
+//                                   Price = p.Price,
+//                               }
+//                               );
+//foreach(var item in productJoin)
+//{
+//    Console.WriteLine($"PRoduct Name {item.ProductName}\tCategory Name :{item.CategoryName}\tPRice :{item.Price}");
+//}
+
+WorkingWithStream stream = new();
+string sourcePath = @"D:\2025\AlignTech";
+string destPath = @"D:\2025\Destination";
+await stream.CopyFiles(sourcePath, destPath, ".txt", ".csv");
